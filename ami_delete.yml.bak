@@ -12,7 +12,7 @@
                --query 'Images[0].ImageId' --output text"
       register: imageid
 
-    - name: delete ami
+    - name: ami delete
       ec2_ami:
         region: "{{ region }}"
         image_id: "{{ imageid.stdout }}"

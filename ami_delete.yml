@@ -4,7 +4,7 @@
   gather_facts: no
   vars:
     region: ap-southeast-2
-    ami_name: wordpress
+    ami_name: App
   tasks:
     - name: get ami id
       command: "aws ec2 describe-images
